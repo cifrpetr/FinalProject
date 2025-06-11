@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Registrace</title>
+  <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="node_modules/bootswatch/dist/slate/bootstrap.min.css">
+  <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+</head>
+<body>
+  <!-- Navbar -->
+  <nav class="navbar navbar-dark bg-dark">
+    <div class="container-fluid">
+      <a class="btn btn-outline-light" href="index.html">Zpět na hlavní stránku</a>
+    </div>
+  </nav>
+
+  <!-- Registration Form -->
+  <div class="container mt-5">
+    <div class="row justify-content-center">
+      <div class="col-md-6">
+        <div class="card bg-dark text-light">
+          <div class="card-body">
+            <h3 class="card-title text-center mb-4">Registrace</h3>
+            <form>
+              <div class="mb-3">
+                <label for="username" class="form-label">Uživatelské jméno</label>
+                <input type="text" class="form-control" id="username" placeholder="Zadejte své uživatelské jméno">
+              </div>
+              <div class="mb-3">
+                <label for="firstname" class="form-label">Jméno</label>
+                <input type="text" class="form-control" id="firstname" placeholder="Zadejte své jméno">
+              </div>
+              <div class="mb-3">
+                <label for="lastname" class="form-label">Příjmení</label>
+                <input type="text" class="form-control" id="lastname" placeholder="Zadejte své příjmení">
+              </div>
+              <div class="mb-3">
+                <label for="email" class="form-label">E-mail</label>
+                <input type="email" class="form-control" id="email" placeholder="Zadejte svůj e-mail">
+              </div>
+              <div class="mb-3">
+                <label for="password" class="form-label">Heslo</label>
+                <input type="password" class="form-control" id="password" placeholder="Zadejte své heslo">
+              </div>
+              <div class="mb-3">
+                <label for="confirmPassword" class="form-label">Potvrzení hesla</label>
+                <input type="password" class="form-control" id="confirmPassword" placeholder="Zadejte heslo znovu">
+              </div>
+              <div class="mb-3">
+                <label for="country" class="form-label">Stát</label>
+                <select class="form-select" id="country">
+                  <option value="">-- Vyberte stát --</option>
+                  <option value="cz">Česká republika</option>
+                  <option value="sk">Slovensko</option>
+                  <option value="de">Německo</option>
+                  <option value="pl">Polsko</option>
+                  <option value="at">Rakousko</option>
+                  <option value="hu">Maďarsko</option>
+                  <option value="uk">Velká Británie</option>
+                  <option value="us">USA</option>
+                  <option value="fr">Francie</option>
+                  <option value="it">Itálie</option>
+                </select>
+              </div>
+              <div class="d-grid">
+                <button type="submit" class="btn btn-warning">Registrovat se</button>
+              </div>
+            </form>
+            <div class="mt-3 text-center">
+              <p>Už máte účet? <a href="login.html" class="link-warning">Přihlaste se</a></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <footer class="bg-dark text-light text-center p-3 mt-5">
+    © 2025 Petr Cifr – One Piece web
+  </footer>
+</body>
+</html>

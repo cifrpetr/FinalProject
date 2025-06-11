@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>North Blue - One Piece</title>
+  <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="node_modules/bootswatch/dist/slate/bootstrap.min.css" />
+  <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+  <style>
+    .navbar-brand {
+      font-family: 'Arial', sans-serif;
+      font-size: 30px;
+      font-weight: bold;
+      color: #f8f9fa;
+      letter-spacing: 2px;
+    }
+
+    .navbar-brand:hover {
+      color: #f39c12;
+    }
+
+    .jumbotron {
+      background: url no-repeat center center;
+      background-size: cover;
+      color: white;
+      padding: 150px 0;
+      text-align: center;
+    }
+
+    .jumbotron h1 {
+      font-size: 3rem;
+      font-weight: bold;
+    }
+
+    .jumbotron p {
+      font-size: 1.2rem;
+    }
+
+    .card-deck .card {
+      margin: 15px;
+    }
+
+    .carousel-container {
+  max-width: 900px;
+  margin: 0 auto;
+  margin-top: 0 !important;
+  margin-bottom: 0;
+}
+
+    .carousel-item img {
+      width: 100%;
+      height: auto;
+      object-fit: cover;
+      max-height: 500px;
+    }
+
+    .carousel-caption {
+      background: rgba(255, 255, 255, 0.7);
+      border-radius: 10px;
+      padding: 10px;
+    }
+
+    .carousel-caption h5,
+    .carousel-caption p {
+      color: #000;
+    }
+
+    .footer {
+      background-color: #343a40;
+      color: white;
+      padding: 20px 0;
+      text-align: center;
+    }
+
+    .h5 {
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navigation Bar -->
+  <nav class="navbar navbar-expand-sm navbar-dark bg-dark">
+    <div class="container-fluid">
+      <a class="navbar-brand ms-auto" href="#">One Piece</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mynavbar">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="mynavbar">
+        <ul class="navbar-nav me-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">Domů</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="Postavy.html">Postavy</a>
+          </li>
+          <li class="nav-item">
+          <a class="nav-link" href="Ovoce.html">Ovoce</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Oceany</a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item spoiler-link" href="NorthBlue.html" data-page="NorthBlue">North Blue</a></li>
+                  <li><a class="dropdown-item spoiler-link" href="SouthBlue.html" data-page="SouthBlue">South Blue</a></li>
+                  <li><a class="dropdown-item spoiler-link" href="EastBlue.html" data-page="EastBlue">East Blue</a></li>
+                  <li><a class="dropdown-item spoiler-link" href="WestBlue.html" data-page="WestBlue">West Blue</a></li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="Dalsi.html">Další</a>
+          </li>
+        </ul>
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="btn btn-outline-light me-2" href="login.html">Přihlášení</a>
+          </li>
+          <li class="nav-item">
+            <a class="btn btn-warning" href="register.html">Registrace</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Jumbotron -->
+  <div class="jumbotron">
+    <h1>North Blue - The Cold Sea</h1>
+    <p>North Blue je známé drsnou povahou. Toto moře je domovem pro některé silné a odhodlané postavy!</p>
+  </div>
+
+  <!-- Carousel Container -->
+  <!-- Carousel Container -->
+  <div class="carousel-container mt-0 mb-5">
+  <div id="northBlueCarousel" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-inner">
+      <!-- 1. Germa Kingdom -->
+      <div class="carousel-item active">
+        <img src="images/germa.webp" class="d-block w-100" alt="Germa Kingdom">
+        <div class="carousel-caption d-md-block">
+          <h5>Germa Kingdom</h5>
+          <p>Sanjiho rodná země, kdysi centrum impéria, dnes cestující království.</p>
+        </div>
+      </div>
+
+      <!-- 2. Lvneel -->
+      <div class="carousel-item">
+        <img src="images/lvneel.webp" class="d-block w-100" alt="Lvneel">
+        <div class="carousel-caption d-md-block">
+          <h5>Lvneel</h5>
+          <p>Rodná zem Mont Blanka Nolana a jeho potomka Mont Blanka Cricketa.</p>
+        </div>
+      </div>
+
+      <!-- 3. Spider Miles -->
+      <div class="carousel-item">
+        <img src="images/spidermiles.webp" class="d-block w-100" alt="Spider Miles">
+        <div class="carousel-caption d-md-block">
+          <h5>Spider Miles</h5>
+          <p>Město ovládané Donquixote Family. Zde fungoval obchod se zbraněmi.</p>
+        </div>
+      </div>
+
+      <!-- 4. Flevance -->
+      <div class="carousel-item">
+        <img src="images/flevance.webp" class="d-block w-100" alt="Flevance">
+        <div class="carousel-caption d-md-block">
+          <h5>Flevance</h5>
+          <p>Známé pro „Amber Lead“, ale těžba vedla k zamoření a zkáze města.</p>
+        </div>
+      </div>
+
+      <!-- 5. Swallow Island -->
+      <div class="carousel-item">
+        <img src="images/Swallow-island.webp" class="d-block w-100" alt="Swallow Island">
+        <div class="carousel-caption d-md-block">
+          <h5>Swallow Island</h5>
+          <p>Místo, kde byl nalezen Trafalgar Law po útěku z Flevance a kde se setkal s Corazónem.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Ovládací šipky -->
+    <button class="carousel-control-prev" type="button" data-bs-target="#northBlueCarousel" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#northBlueCarousel" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+</div>
+
+  <!-- Characters Section -->
+  <div class="container my-5">
+    <h2 class="text-center">Známé postavy z North Blue</h2>
+    <div class="card-deck">
+      <div class="card">
+        <div class="card-body">
+          <h5 class="card-title">Donquixote Doflamingo</h5>
+          <p class="card-text">Bývalý král Dressrosy a velitel Donquixote Pirates, známý svou krutostí a schopnostmi s ovocem "Ito Ito no Mi".</p>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-body">
+          <h5 class="card-title">Trafalgar D. Water Law</h5>
+          <p class="card-text">Doktor a kapitán Heart Pirates, známý pro svou schopnost ovoce "Ope Ope no Mi".</p>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-body">
+          <h5 class="card-title">Sanji</h5>
+          <p class="card-text">Kuchař Straw Hat Pirates a člen Germa 66, známý svou technikou boje pomocí nohou.</p>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-body">
+          <h5 class="card-title">Bellamy</h5>
+          <p class="card-text">Původně patřil mezi piráty Bellamy Pirates, známý svou nenávistí vůči Luffymu a své touze po slávě.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>

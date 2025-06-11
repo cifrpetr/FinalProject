@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>West Blue - One Piece</title>
+  <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="node_modules/bootswatch/dist/slate/bootstrap.min.css" />
+  <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+  <style>
+    .navbar-brand {
+      font-family: 'Arial', sans-serif;
+      font-size: 30px;
+      font-weight: bold;
+      color: #f8f9fa;
+      letter-spacing: 2px;
+    }
+
+    .navbar-brand:hover {
+      color: #f39c12;
+    }
+
+    .jumbotron {
+      background: url no-repeat center center;
+      background-size: cover;
+      color: white;
+      padding: 150px 0;
+      text-align: center;
+    }
+
+    .jumbotron h1 {
+      font-size: 3rem;
+      font-weight: bold;
+    }
+
+    .jumbotron p {
+      font-size: 1.2rem;
+    }
+
+    .card-deck .card {
+      margin: 15px;
+    }
+
+    .carousel-container {
+      max-width: 900px;
+      margin: 0 auto;
+      margin-top: 0 !important;
+      margin-bottom: 0;
+    }
+
+    .carousel-item img {
+      width: 100%;
+      height: auto;
+      object-fit: cover;
+      max-height: 500px;
+    }
+
+    .carousel-caption {
+      background: rgba(255, 255, 255, 0.7);
+      border-radius: 10px;
+      padding: 10px;
+    }
+
+    .carousel-caption h5,
+    .carousel-caption p {
+      color: #000;
+    }
+
+    .footer {
+      background-color: #343a40;
+      color: white;
+      padding: 20px 0;
+      text-align: center;
+    }
+
+    .h5 {
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navigation Bar -->
+  <nav class="navbar navbar-expand-sm navbar-dark bg-dark">
+    <div class="container-fluid">
+      <a class="navbar-brand ms-auto" href="#">One Piece</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mynavbar">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="mynavbar">
+        <ul class="navbar-nav me-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">Domů</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="Postavy.html">Postavy</a>
+          </li>
+          <li class="nav-item">
+                    <a class="nav-link" href="Ovoce.html">Ovoce</a>
+                    </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Oceany</a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item spoiler-link" href="NorthBlue.html" data-page="NorthBlue">North Blue</a></li>
+              <li><a class="dropdown-item spoiler-link" href="SouthBlue.html" data-page="SouthBlue">South Blue</a></li>
+              <li><a class="dropdown-item spoiler-link" href="EastBlue.html" data-page="EastBlue">East Blue</a></li>
+              <li><a class="dropdown-item spoiler-link" href="WestBlue.html" data-page="WestBlue">West Blue</a></li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="Dalsi.html">Další</a>
+          </li>
+        </ul>
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="btn btn-outline-light me-2" href="login.html">Přihlášení</a>
+          </li>
+          <li class="nav-item">
+            <a class="btn btn-warning" href="register.html">Registrace</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Jumbotron -->
+  <div class="jumbotron">
+    <h1>West Blue - The Mysterious Sea</h1>
+    <p>West Blue je domovem mnoha tajemství a neprobádaných míst. To je místo, kde se mísí příběhy slávy a tragédie!</p>
+  </div>
+
+  <!-- Carousel Container -->
+  <div class="carousel-container mt-0 mb-5">
+    <div id="westBlueCarousel" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-inner">
+        <!-- 1. Water 7 -->
+        <div class="carousel-item active">
+          <img src="images/water7.webp" class="d-block w-100" alt="Water 7">
+          <div class="carousel-caption d-md-block">
+            <h5>Water 7</h5>
+            <p>Slavné město známé svou lodními doky a vynikajícími řemeslníky, místem, kde se formovaly velké příběhy.</p>
+          </div>
+        </div>
+
+        <!-- 2. Enies Lobby -->
+        <div class="carousel-item">
+          <img src="images/enieslobby.webp" class="d-block w-100" alt="Enies Lobby">
+          <div class="carousel-caption d-md-block">
+            <h5>Enies Lobby</h5>
+            <p>Místo, kde se rozhodovalo o osudu lidí a kde se odehrály některé z nejintenzivnějších bitev One Piece.</p>
+          </div>
+        </div>
+
+        <!-- 4. Thriller Bark -->
+        <div class="carousel-item">
+          <img src="images/thrillerbark.webp" class="d-block w-100" alt="Thriller Bark">
+          <div class="carousel-caption d-md-block">
+            <h5>Thriller Bark</h5>
+            <p>Místo s příběhem hrůzy, kde se nachází obrovský hřbitov a temné tajemství.</p>
+          </div>
+        </div>
+
+      <!-- Ovládací šipky -->
+      <button class="carousel-control-prev" type="button" data-bs-target="#westBlueCarousel" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#westBlueCarousel" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+  </div>
+
+  <!-- Characters Section -->
+  <div class="container my-5">
+    <h2 class="text-center">Známé postavy z West Blue</h2>
+    <div class="card-deck">
+      <div class="card">
+        <div class="card-body">
+          <h5 class="card-title">Franky</h5>
+          <p class="card-text">
+            Loďař Straw Hat Pirates, původně z Water 7.</p>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-body">
+          <h5 class="card-title">Rob Lucci</h5>
+          <p class="card-text">Bývalý člen CP9, známý svými neuvěřitelnými bojovými schopnostmi.</p>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-body">
+          <h5 class="card-title">Crocodile</h5>
+          <p class="card-text">Bývalý shichibukai a kapitán Baroque Works, známý svou schopností ovládat písek pomocí ovoce "Suna Suna no Mi".</p>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-body">
+          <h5 class="card-title">Donquixote Doflamingo</h5>
+          <p class="card-text">Původně z West Blue, známý svou brutalitou a manipulacemi, je vůdcem Donquixote Pirates.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>

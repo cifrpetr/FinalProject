@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Postavy – One Piece</title>
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="node_modules/bootswatch/dist/slate/bootstrap.min.css">
+    <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <style>
+      html {
+        overflow-y: scroll;
+    }
+
+    .navbar-brand {
+        font-family: 'Arial', sans-serif;
+        font-size: 30px;
+        font-weight: bold;
+        color: #f8f9fa;
+        letter-spacing: 2px;
+    }
+
+    .navbar-brand:hover {
+        color: #f39c12;
+    }
+    .card-img-top {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+    object-position: top; 
+}
+
+    </style>
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-sm navbar-dark bg-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand ms-auto" href="index.html">One Piece</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mynavbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="mynavbar">
+                <ul class="navbar-nav me-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Domů</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="Postavy.html">Postavy</a>
+                    </li>
+                    <li class="nav-item">
+                    <a class="nav-link" href="Ovoce.html">Ovoce</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Oceany</a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="NorthBlue.html">North Blue</a></li>
+                            <li><a class="dropdown-item" href="SouthBlue.html">South Blue</a></li>
+                            <li><a class="dropdown-item" href="EastBlue.html">East Blue</a></li>
+                            <li><a class="dropdown-item" href="WestBlue.html">West Blue</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+            <a class="nav-link" href="Dalsi.html">Další</a>
+          </li>
+                </ul>
+                <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="btn btn-outline-light me-2" href="login.html">Přihlášení</a>
+          </li>
+          <li class="nav-item">
+            <a class="btn btn-warning" href="register.html">Registrace</a>
+          </li>
+        </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Obsah -->
+    <div class="container mt-5">
+        <h1 class="text-center mb-4">Hlavní postavy</h1>
+        <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 g-4">
+
+            <!-- Karta -->
+            <div class="col">
+                <div class="card h-100">
+                    <img src="images/luffy-profile.jpg" class="card-img-top" alt="Luffy">
+                    <div class="card-body">
+                        <h5 class="card-title">Monkey D. Luffy</h5>
+                        <p class="card-text">Kapitán Straw Hat pirátů. Jeho snem je stát se Králem pirátů.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Další postavy -->
+            <div class="col">
+                <div class="card h-100">
+                    <img src="images/zoro-profile.webp" class="card-img-top" alt="Zoro">
+                    <div class="card-body">
+                        <h5 class="card-title">Roronoa Zoro</h5>
+                        <p class="card-text">Šermíř, který ovládá styl tří mečů. Sní o tom stát se nejlepším šermířem na světě.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col">
+                <div class="card h-100">
+                    <img src="images/nami-profile.webp" class="card-img-top" alt="Nami">
+                    <div class="card-body">
+                        <h5 class="card-title">Nami</h5>
+                        <p class="card-text">Navigátorka posádky, sní o tom zmapovat celý svět.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col">
+                <div class="card h-100">
+                    <img src="images/ussop-profile.webp" class="card-img-top" alt="Usopp">
+                    <div class="card-body">
+                        <h5 class="card-title">Usopp</h5>
+                        <p class="card-text">Odstřelovač a vynálezce. Chce být statečným válečníkem moře.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Přidej další postavy -->
+            <div class="col">
+                <div class="card h-100">
+                    <img src="images/sanji-profile.webp" class="card-img-top" alt="Sanji">
+                    <div class="card-body">
+                        <h5 class="card-title">Sanji</h5>
+                        <p class="card-text">Kuchař a bojovník. Sní o nalezení All Blue.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col">
+                <div class="card h-100">
+                    <img src="images/chopper-profile.webp" class="card-img-top" alt="Chopper">
+                    <div class="card-body">
+                        <h5 class="card-title">Tony Tony Chopper</h5>
+                        <p class="card-text">Lékař posádky, sob, který snědl Ďáblovo ovoce.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col">
+                <div class="card h-100">
+                    <img src="images/robin-profile.webp" class="card-img-top" alt="Robin">
+                    <div class="card-body">
+                        <h5 class="card-title">Nico Robin</h5>
+                        <p class="card-text">Archeoložka. Umí číst Poneglyfy a sní o objevení pravdy o historii.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col">
+                <div class="card h-100">
+                    <img src="images/franky-profile.webp" class="card-img-top" alt="Franky">
+                    <div class="card-body">
+                        <h5 class="card-title">Franky</h5>
+                        <p class="card-text">Kyborg a stavitel lodí. Postavil loď Thousand Sunny.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Poslední čtyři -->
+            <div class="col">
+                <div class="card h-100">
+                    <img src="images/brook-profile.webp" class="card-img-top" alt="Brook">
+                    <div class="card-body">
+                        <h5 class="card-title">Brook</h5>
+                        <p class="card-text">Hudebník a kostlivec. Oživený díky Ďáblovu ovoci Yomi Yomi.</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col">
+              <div class="card h-100">
+                  <img src="images/jinbe-profile.webp" class="card-img-top" alt="Jinbe">
+                  <div class="card-body">
+                      <h5 class="card-title">Jinbe</h5>
+                      <p class="card-text">Bývalý kapitán rybářských pirátů a kormidelník posádky Straw Hat. Je mistr v rybářském karate.</p>
+                  </div>
+              </div>
+          </div>
+        </div>
+    </div>
+</body>
+</html>

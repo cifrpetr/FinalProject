@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>One Piece - Ovoce</title>
+  <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="node_modules/bootswatch/dist/slate/bootstrap.min.css">
+  <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+  <style>
+    .navbar-brand {
+      font-family: 'Arial', sans-serif;
+      font-size: 30px;
+      font-weight: bold;
+      color: #f8f9fa;
+      letter-spacing: 2px;
+    }
+    .navbar-brand:hover {
+      color: #f39c12;
+    }
+  </style>
+</head>
+<body>
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-sm navbar-dark bg-dark">
+    <div class="container-fluid">
+      <a class="navbar-brand ms-auto" href="#">One Piece</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mynavbar">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="mynavbar">
+        <ul class="navbar-nav me-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">Domů</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="Postavy.html">Postavy</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" href="Ovoce.html">Ovoce</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Oceany</a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="NorthBlue.html">North Blue</a></li>
+              <li><a class="dropdown-item" href="SouthBlue.html">South Blue</a></li>
+              <li><a class="dropdown-item" href="EastBlue.html">East Blue</a></li>
+              <li><a class="dropdown-item" href="WestBlue.html">West Blue</a></li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="Dalsi.html">Další</a>
+          </li>
+        </ul>
+    <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="btn btn-outline-light me-2" href="login.html">Přihlášení</a>
+          </li>
+          <li class="nav-item">
+            <a class="btn btn-warning" href="register.html">Registrace</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Content -->
+  <div class="container mt-4">
+    <h1 class="text-center mb-4">Ďábelské ovoce</h1>
+
+    <!-- Tabs -->
+    <ul class="nav nav-tabs" id="fruitTabs" role="tablist">
+      <li class="nav-item" role="presentation">
+        <button class="nav-link active" id="info-tab" data-bs-toggle="tab" data-bs-target="#info" type="button" role="tab">Info</button>
+      </li>
+      <li class="nav-item" role="presentation">
+        <button class="nav-link" id="paramecia-tab" data-bs-toggle="tab" data-bs-target="#paramecia" type="button" role="tab">Paramecia</button>
+      </li>
+      <li class="nav-item" role="presentation">
+        <button class="nav-link" id="logia-tab" data-bs-toggle="tab" data-bs-target="#logia" type="button" role="tab">Logia</button>
+      </li>
+      <li class="nav-item" role="presentation">
+        <button class="nav-link" id="zoan-tab" data-bs-toggle="tab" data-bs-target="#zoan" type="button" role="tab">Zoan</button>
+      </li>
+    </ul>
+    <div class="tab-content mt-3" id="fruitTabsContent">
+      <!-- Info Tab -->
+      <div class="tab-pane fade show active" id="info" role="tabpanel">
+        <p>Ďábelské ovoce (Devil Fruits) jsou magické plody, které svým konzumentům propůjčí nadpřirozené schopnosti. Ovšem za tuto sílu musí zaplatit schopností plavat, protože ďábelské ovoce svému uživateli znemožní plavání.</p>
+      </div>
+      <!-- Paramecia Tab -->
+      <div class="tab-pane fade" id="paramecia" role="tabpanel">
+        <p>Paramecia je druh ďábelského ovoce, který propůjčuje uživateli rozličné schopnosti – od manipulace s tělem po ovládání prostředí. Tyto ovoce jsou nejčastější a nejrozmanitější.</p>
+      </div>
+      <!-- Logia Tab -->
+      <div class="tab-pane fade" id="logia" role="tabpanel">
+        <p>Logia ovoce umožňují svému uživateli proměnit se v přírodní element (například oheň, led nebo kouř) a manipulovat s ním. Jsou považována za jedny z nejsilnějších druhů.</p>
+      </div>
+      <!-- Zoan Tab -->
+      <div class="tab-pane fade" id="zoan" role="tabpanel">
+        <p>Zoan ovoce umožňuje svému uživateli měnit se v určité zvíře nebo hybrid mezi člověkem a zvířetem. Je ideální pro boj zblízka.</p>
+        <!-- Accordion -->
+        <div class="accordion mt-3" id="zoanAccordion">
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="headingMythical">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseMythical" aria-expanded="false" aria-controls="collapseMythical">
+                Mythical Zoan
+              </button>
+            </h2>
+            <div id="collapseMythical" class="accordion-collapse collapse" aria-labelledby="headingMythical" data-bs-parent="#zoanAccordion">
+              <div class="accordion-body">
+                Mythical Zoan ovoce umožňují proměnu v mýtické bytosti (např. fenix, dračí forma). Jsou velmi vzácná.
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="headingAncient">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseAncient" aria-expanded="false" aria-controls="collapseAncient">
+                Ancient Zoan
+              </button>
+            </h2>
+            <div id="collapseAncient" class="accordion-collapse collapse" aria-labelledby="headingAncient" data-bs-parent="#zoanAccordion">
+              <div class="accordion-body">
+                Ancient Zoan ovoce umožňují přeměnu v dávno vyhynulá zvířata (například dinosaury).
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="headingStandard">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseStandard" aria-expanded="false" aria-controls="collapseStandard">
+                Standard Zoan
+              </button>
+            </h2>
+            <div id="collapseStandard" class="accordion-collapse collapse" aria-labelledby="headingStandard" data-bs-parent="#zoanAccordion">
+              <div class="accordion-body">
+                Standardní Zoan ovoce umožňují přeměnu ve skutečné a současné zvíře (např. leopard, sokol).
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

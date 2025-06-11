@@ -1,41 +1,151 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="cs">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>One Piece - Domů</title>
+  <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="node_modules/bootswatch/dist/slate/bootstrap.min.css">
+  <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+  <style>
+    .navbar-brand {
+      font-family: 'Arial', sans-serif;
+      font-size: 30px;
+      font-weight: bold;
+      color: #f8f9fa;
+      letter-spacing: 2px;
+    }
+    .navbar-brand:hover {
+      color: #f39c12;
+    }
+
+    .carousel-item img {
+      width: 100%;
+      height: 600px;
+      object-fit: cover;
+    }
+
+    body {
+      overflow-x: hidden;
+    }
+
+    h1 {
+      font-size: 2rem;
+    }
+
+    p {
+      font-size: 1rem;
+    }
+
+    @media (max-width: 767px) {
+      h1 {
+        font-size: 1.5rem;
+      }
+
+      p {
+        font-size: 0.9rem;
+      }
+
+      .carousel-item img {
+        height: 250px;
+      }
+    }
+  </style>
 </head>
 <body>
-    <nav class="navbar navbar-expand-sm navbar-dark bg-dark">
-        <div class="container-fluid">
-          <a class="navbar-brand" href="javascript:void(0)">Logo</a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mynavbar">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="mynavbar">
-            <ul class="navbar-nav me-auto">
-              <li class="nav-item">
-                <a class="nav-link" href="javascript:void(0)">Link</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="javascript:void(0)">Link</a>
-              </li>
-              <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Dropdown</a>
-                <ul class="dropdown-menu">
-                  <li><a class="dropdown-item" href="#">Link</a></li>
-                  <li><a class="dropdown-item" href="#">Another link</a></li>
-                  <li><a class="dropdown-item" href="#">A third link</a></li>
-                </ul>
-              </li>
+
+  <nav class="navbar navbar-expand-sm navbar-dark bg-dark">
+    <div class="container-fluid">
+      <a class="navbar-brand ms-auto" href="#">One Piece</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mynavbar">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="mynavbar">
+        <ul class="navbar-nav me-auto">
+          <li class="nav-item">
+            <a class="nav-link active" href="index.html">Domů</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="Postavy.html">Postavy</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="Ovoce.html">Ovoce</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Oceany</a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="NorthBlue.html">North Blue</a></li>
+              <li><a class="dropdown-item" href="SouthBlue.html">South Blue</a></li>
+              <li><a class="dropdown-item" href="EastBlue.html">East Blue</a></li>
+              <li><a class="dropdown-item" href="WestBlue.html">West Blue</a></li>
             </ul>
-            <form class="d-flex">
-              <input class="form-control me-2" type="text" placeholder="Search">
-              <button class="btn btn-primary" type="button">Search</button>
-            </form>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="Dalsi.html">Další</a>
+          </li>
+        </ul>
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="btn btn-outline-light me-2" href="login.html">Přihlášení</a>
+          </li>
+          <li class="nav-item">
+            <a class="btn btn-warning" href="register.html">Registrace</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <div class="container mt-4">
+    <div class="row">
+      <div class="col-md-8 offset-md-2 text-center">
+        <h1>Vítej na stránce ohledně anime One Piece</h1>
+        <p>One Piece je slavné japonské anime a manga kde hlavní postavou je Monkey D. Luffyho a jeho posádka kteří se vydávájí na cestu za legendárním pokladem One Piece.</p>
+      </div>
+    </div>
+
+    <div id="onePieceCarousel" class="carousel slide mt-5" data-bs-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="images/luffy.jpg" class="d-block w-100" alt="Luffy">
+          <div class="carousel-caption d-block">
+            <h5>Monkey D. Luffy</h5>
+            <p>Kapitán Straw Hat pirátů</p>
           </div>
         </div>
-      </nav>
+        <div class="carousel-item">
+          <img src="images/crew.jpg" class="d-block w-100" alt="Posádka">
+          <div class="carousel-caption d-block">
+            <h5>Straw Hat Crew</h5>
+            <p>Posádka má 10 členů (na fotce není zobrazena postava Jimbei)</p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="images/goingmerry.jpg" class="d-block w-100" alt="Going Merry">
+          <div class="carousel-caption d-block">
+            <h5>Going Merry</h5>
+            <p>První loď Straw Hat posádky</p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="images/grandline.jpg" class="d-block w-100" alt="Grand Line">
+          <div class="carousel-caption d-block">
+            <h5>Grand Line</h5>
+            <p>Název moře ve kterém se odehrává velká část děje</p>
+          </div>
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#onePieceCarousel" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon"></span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#onePieceCarousel" data-bs-slide="next">
+        <span class="carousel-control-next-icon"></span>
+      </button>
+    </div>
+  </div>
+
+  <footer class="bg-dark text-light text-center p-3 mt-5">
+    © 2025 Petr Cifr – One Piece web
+  </footer>
 </body>
 </html>

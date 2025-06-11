@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>South Blue - One Piece</title>
+  <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="node_modules/bootswatch/dist/slate/bootstrap.min.css" />
+  <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+  <style>
+    .navbar-brand {
+      font-family: 'Arial', sans-serif;
+      font-size: 30px;
+      font-weight: bold;
+      color: #f8f9fa;
+      letter-spacing: 2px;
+    }
+
+    .navbar-brand:hover {
+      color: #f39c12;
+    }
+
+    .jumbotron {
+      background: url no-repeat center center;
+      background-size: cover;
+      color: white;
+      padding: 150px 0;
+      text-align: center;
+    }
+
+    .jumbotron h1 {
+      font-size: 3rem;
+      font-weight: bold;
+    }
+
+    .jumbotron p {
+      font-size: 1.2rem;
+    }
+
+    .card-deck .card {
+      margin: 15px;
+    }
+
+    .carousel-container {
+      max-width: 900px;
+      margin: 0 auto;
+      margin-top: 0 !important;
+      margin-bottom: 0;
+    }
+
+    .carousel-item img {
+      width: 100%;
+      height: auto;
+      object-fit: cover;
+      max-height: 500px;
+    }
+
+    .carousel-caption {
+      background: rgba(255, 255, 255, 0.7);
+      border-radius: 10px;
+      padding: 10px;
+    }
+
+    .carousel-caption h5,
+    .carousel-caption p {
+      color: #000;
+    }
+
+    .footer {
+      background-color: #343a40;
+      color: white;
+      padding: 20px 0;
+      text-align: center;
+    }
+
+    .h5 {
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navigation Bar -->
+  <nav class="navbar navbar-expand-sm navbar-dark bg-dark">
+    <div class="container-fluid">
+      <a class="navbar-brand ms-auto" href="#">One Piece</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mynavbar">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="mynavbar">
+        <ul class="navbar-nav me-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">Domů</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="Postavy.html">Postavy</a>
+          </li>
+
+          <li class="nav-item">
+          <a class="nav-link" href="Ovoce.html">Ovoce</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Oceany</a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item spoiler-link" href="NorthBlue.html" data-page="NorthBlue">North Blue</a></li>
+              <li><a class="dropdown-item spoiler-link" href="SouthBlue.html" data-page="SouthBlue">South Blue</a></li>
+              <li><a class="dropdown-item spoiler-link" href="EastBlue.html" data-page="EastBlue">East Blue</a></li>
+              <li><a class="dropdown-item spoiler-link" href="WestBlue.html" data-page="WestBlue">West Blue</a></li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="Dalsi.html">Další</a>
+          </li>
+        </ul>
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="btn btn-outline-light me-2" href="login.html">Přihlášení</a>
+          </li>
+          <li class="nav-item">
+            <a class="btn btn-warning" href="register.html">Registrace</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Jumbotron -->
+  <div class="jumbotron">
+    <h1>South Blue - The Warm Sea</h1>
+    <p>South Blue je známé svou teplou vodou a tropickými ostrovy. Místo plné rozmanitých postav a kultur!</p>
+  </div>
+
+  <!-- Carousel Container -->
+  <div class="carousel-container mt-0 mb-5">
+    <div id="southBlueCarousel" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-inner">
+        <!--2. Skypiea -->
+        <div class="carousel-item active">
+          <img src="images/skypiea.webp" class="d-block w-100" alt="Skypiea">
+          <div class="carousel-caption d-md-block">
+            <h5>Skypiea</h5>
+            <p>Skypiea je tajemný ostrov ve vzduchu, domov pro nebešťany a jejich boj s místními obyvateli.</p>
+          </div>
+        </div>
+
+        <!-- 3. Jaya -->
+        <div class="carousel-item">
+          <img src="images/jaya.webp" class="d-block w-100" alt="Jaya">
+          <div class="carousel-caption d-md-block">
+            <h5>Jaya</h5>
+            <p>Ostrov, který je známý svou souvislostí s historií Skypiea a legendárními piráty.</p>
+          </div>
+        </div>
+
+
+        <!-- 5. Baterilla Island -->
+        <div class="carousel-item">
+          <img src="images/baterilla.webp" class="d-block w-100" alt="Baterilla Island">
+          <div class="carousel-caption d-md-block">
+            <h5>Baterilla Island</h5>
+            <p>Domov pro lidi a piráty, kteří tvoří unikátní komunity na tomto tropickém ostrově.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Ovládací šipky -->
+      <button class="carousel-control-prev" type="button" data-bs-target="#southBlueCarousel" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#southBlueCarousel" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+  </div>
+
+  <!-- Characters Section -->
+  <div class="container my-5">
+    <h2 class="text-center">Známé postavy ze South Blue</h2>
+    <div class="card-deck">
+      <div class="card">
+        <div class="card-body">
+          <h5 class="card-title">Portgas D. Ace</h5>
+          <p class="card-text">Bratr Monkey D. Luffyho, člen posádky Whitebeard Pirates, známý svou schopností ovoce "Mera Mera no Mi".</p>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-body">
+          <h5 class="card-title">Trafalgar D. Water Law</h5>
+          <p class="card-text">Doktor a kapitán Heart Pirates, známý pro svou schopnost ovoce "Ope Ope no Mi".</p>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-body">
+          <h5 class="card-title">Bon Clay</h5>
+          <p class="card-text">Dříve zvaný Mr. 2, známý svou schopností proměnit svoji tvář a tělo díky ovoci "Mane Mane no Mi".</p>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-body">
+          <h5 class="card-title">Vivi</h5>
+          <p class="card-text">Královna Alabasty, která bojovala za záchranu své vlasti před hrozbou Baroque Works.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+</body>
+</html>
